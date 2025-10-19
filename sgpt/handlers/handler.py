@@ -101,7 +101,7 @@ class Handler:
         if functions:
             additional_kwargs["tool_choice"] = "auto"
             additional_kwargs["tools"] = functions
-            additional_kwargs["parallel_tool_calls"] = False
+            additional_kwargs["parallel_tool_calls"] = True
 
         response = completion(
             model=model,
